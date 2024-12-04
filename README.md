@@ -25,7 +25,7 @@ significantly reduced computational cost. Unlike traditional methods that combin
 DistillDIFT uses a novel distillation technique to unify the strengths of two vision foundation models into a single, 
 streamlined model. By integrating 3D data without requiring human annotations, DistillDIFT further improves accuracy.
 
-Overall, our empirical results demonstrate that our distilled model with 3D data augmentation achieves performance superior
+Overall, our empirical results demonstrate that our distilled model with 3D data augmentation achieves superior performance
 to current state-of-the-art methods while significantly reducing computational load and enhancing practicality for real-world 
 applications, such as semantic video correspondence.
 
