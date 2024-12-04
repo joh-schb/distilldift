@@ -1,18 +1,13 @@
 <p align="center">
- <h1 align="center"><span class="rainbow-text">DistillDIFT: </span>Distillation of Diffusion Features for Semantic Correspondence</h2>
-<style>
-.rainbow-text {
-    background: linear-gradient(-200deg, rgb(80, 199, 239), rgb(118, 90, 222), rgb(209, 75, 230), rgb(224, 56, 202), red, orange, yellow);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-</style>
+ <h1 align="center">⚗️ DistillDIFT: Distillation of Diffusion Features for Semantic Correspondence</h2>
  <p align="center"> 
     Frank Fundel · Johannes Schusterbauer · Vincent Tao Hu · Björn Ommer
  </p>
  <p align="center"> 
     <b>CompVis @ LMU Munich</b>
+ </p>
+ <p align="center">
+    WACV 2025
  </p>
  
 <p align="center">
@@ -61,7 +56,7 @@ And finally, run the evaluation script via
 bash eval_distilldift.sh
 ```
 
-##  Training
+## 🏋️ Training
 First use
 ```bash
 cd train
@@ -97,13 +92,25 @@ And run the training via
     ```
 
 ### Refinement using CO3D
-Download and prepare the CO3D dataset via
+Follow the [official instructions](https://github.com/facebookresearch/co3d) to download the CO3D dataset and then prepare the CO3D dataset via
 ```bash
-bash datasets/download_co3d.sh
 python datasets/create_co3d.py
 ```
 
 And run the training via
 ```bash
 accelerate launch --multi_gpu --num_processes 4 train.py distilled_s --dataset_name CO3D --use_cache --parallel_cache
+```
+
+## 🎓 Citation
+
+Please cite our paper:
+
+```bibtex
+@article{fundel2025distilldift,
+  author    = {Fundel, Frank and Schusterbauer, Johannes and Hu, Vincent Tao and Ommer, Björn},
+  title     = {Distillation of Diffusion Features for Semantic Correspondence},
+  journal   = {WACV},
+  year      = {2025},
+}
 ```
