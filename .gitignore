@@ -1,14 +1,2 @@
-sandbox
-checkpoints
-results
-logs
-wandb
-outputs
-
-*__pycache__*
+.DS_store
 .idea
-venv
-
-*.DS_Store
-*._.DS_Store
-
