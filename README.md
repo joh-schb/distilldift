@@ -4,7 +4,7 @@
     Frank Fundel · Johannes Schusterbauer · Vincent Tao Hu · Björn Ommer
  </p>
  <p align="center"> 
-    <b>CompVis @ LMU Munich</b>
+    <b>CompVis @ LMU Munich, MCML</b>
  </p>
  <p align="center">
     WACV 2025
