@@ -93,7 +93,7 @@ python datasets/create_co3d.py
 
 And run the training via
 ```bash
-accelerate launch --multi_gpu --num_processes 4 train.py distilled_s --dataset_name CO3D --use_cache --parallel_cache
+accelerate launch --multi_gpu --num_processes 4 train.py distilled_s --dataset_name CO3D --use_cache
 ```
 
 ## 🎓 Citation
